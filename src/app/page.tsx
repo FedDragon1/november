@@ -39,7 +39,7 @@ export default function Home() {
 
     return (
         <>
-            <NavigationBar />
+            <NavigationBar onClick={() => {}} />
             <div className="h-screen w-full" id="page-container">
                 <div id="horizontal-scroll" className="flex flex-nowrap flex-row h-full">
                     <Cover />
