@@ -1,0 +1,65 @@
+input[type=text], textarea {
+    flex-shrink: 1;
+    outline: none;
+    background: transparent;
+    color: var(--background);
+    font-size: 3rem;
+    border-bottom: 1px solid #777777;
+    padding: 20px 0;
+    display: block;
+    resize: none;
+    width: 100%;
+}
+
+.radio-container {
+    display: inline-flex;
+}
+
+/* Hide the native radio input */
+.radio-container input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--background);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: background-color 0.3s;
+}
+
+/* Create the indicator (the dot/circle inside the radio button) */
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator when checked */
+.radio-container input:checked ~ .checkmark::after {
+    display: block;
+}
+
+/* Style the indicator */
+.radio-container .checkmark::after {
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--background)
+}
