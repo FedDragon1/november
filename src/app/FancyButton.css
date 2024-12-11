@@ -8,7 +8,7 @@
     content: '';
     background: var(--foreground);
     transition: 0.5s ease-out transform;
-    z-index: -1;
+    z-index: 10;
 }
 
 .fancy-button:hover::before {
