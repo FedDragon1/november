@@ -49,7 +49,7 @@ const AboutNovember: FC<Props> = () => {
     }, []);
 
     return (
-        <section className="w-[200vw] h-full relative flex-shrink-0 px-80 bg-midground" id="about-november">
+        <section className="w-[3800px] h-full relative flex-shrink-0 px-80 bg-midground" id="about-november">
             <h1 className="text-[12rem] absolute uppercase mt-16">Write your slogan here</h1>
             <div className="flex items-end gap-20 h-full pb-20">
                 <div className="w-[700px] flex flex-col gap-5">
